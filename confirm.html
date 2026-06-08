@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Appointment Confirmed</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+
+<h1>Appointment Confirmed</h1>
+
+<p id="details"></p>
+
+<button onclick="window.location.href='doctors.html'">
+Book Another Appointment
+</button>
+
+<script>
+
+document.getElementById("details").innerHTML =
+`
+Doctor: ${localStorage.getItem("doctor")} <br>
+Date: ${localStorage.getItem("date")} <br>
+Time: ${localStorage.getItem("time")}
+`;
+
+</script>
+
+</body>
+</html>
