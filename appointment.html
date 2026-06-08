@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Appointment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+
+<h2>Book Appointment</h2>
+
+<p id="doctorName"></p>
+
+<input type="date" id="date"><br><br>
+
+<input type="time" id="time"><br><br>
+
+<button onclick="bookAppointment()">
+Confirm Appointment
+</button>
+
+<script>
+
+document.getElementById("doctorName").innerHTML =
+"Selected Doctor: " + localStorage.getItem("doctor");
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
