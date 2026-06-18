@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Doctor Categories</title>
-<link rel="stylesheet" href="style.css">
+    <title>Medi Appoin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="center">
+<body>
 
-<h2>Select Doctor Type</h2>
+<header>
+    <h1>Medi Appoin</h1>
+</header>
 
-<button onclick="selectDoctor('Orthopedic')">
-Orthopedic
-</button>
+<div class="container">
 
-<button onclick="selectDoctor('Cardiologist')">
-Cardiologist
-</button>
+    <div class="card">
+        <div class="card-top">
+            <div class="number">1</div>
+            <div class="status">AVAILABLE</div>
+        </div>
 
-<button onclick="selectDoctor('Eye Specialist')">
-Eye Specialist
-</button>
+        <h2>General Physician</h2>
 
-<button onclick="selectDoctor('General Physician')">
-General Physician
-</button>
+        <p>
+            Consultation for fever, cold, infections,
+            routine checkups and general health concerns.
+        </p>
 
-<button onclick="selectDoctor('Pediatrician')">
-Pediatrician
-</button>
+        <button onclick="selectDoctor('General Physician')">
+            Book Appointment
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <div class="number">2</div>
+            <div class="status">AVAILABLE</div>
+        </div>
+
+        <h2>Cardiologist</h2>
+
+        <p>
+            Heart specialist for cardiac issues,
+            blood pressure and heart checkups.
+        </p>
+
+        <button onclick="selectDoctor('Cardiologist')">
+            Book Appointment
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <div class="number">3</div>
+            <div class="status">AVAILABLE</div>
+        </div>
+
+        <h2>Eye Specialist</h2>
+
+        <p>
+            Eye examination, vision correction,
+            eye infections and treatment.
+        </p>
+
+        <button onclick="selectDoctor('Eye Specialist')">
+            Book Appointment
+        </button>
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
